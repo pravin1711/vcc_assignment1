@@ -1,13 +1,14 @@
 CREATE DATABASE IF NOT EXISTS student_db;
 USE student_db;
 
-CREATE TABLE IF NOT EXISTS students (
+CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    roll_number VARCHAR(20) UNIQUE NOT NULL,
-    name VARCHAR(100),
+    roll_number VARCHAR(15) UNIQUE NOT NULL,
+    name VARCHAR(50),
     email VARCHAR(100)
 );
 
 INSERT INTO students (roll_number, name, email) VALUES
-('101', 'Alice Johnson', 'alice@example.com'),
-('102', 'Bob Smith', 'bob@example.com');
+('M23CSA019', 'PRAVIN', 'M23CSA019@IITJ.AC.IN'),
+('M23CSA100', 'RAJU', 'M23CSA100@IITJ.AC.IN'),
+('M23CSA101', 'SONU', 'M23CSA101@IITJ.AC.IN');
